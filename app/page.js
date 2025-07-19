@@ -20,10 +20,10 @@ export default function GdotNfcCard() {
     <main className="min-h-screen bg-gradient-to-b from-[#0b1f16] via-[#091a13] to-black text-white px-6 py-8 font-sans">
       {/* Logo and Header */}
       <section className="flex flex-col items-center text-center" data-aos="fade-down">
-        <div className="w-24 h-24 bg-gradient-to-tr from-green-700 to-green-900 rounded-full mb-4 shadow-lg flex items-center justify-center">
-          <span className="text-white font-bold text-xl">Logo</span>
+        <div className="w-full h-full  mb-4  flex items-center justify-center">
+          <img src='/G-DOT white hd.png' className='w-full h-full object-cover'></img>
         </div>
-        <h1 className="text-3xl font-extrabold tracking-wide text-green-300">GDOT International</h1>
+        {/* <h1 className="text-3xl font-extrabold tracking-wide text-green-300">GDOT International</h1> */}
         <p className="text-md text-gray-300 mt-1">Customized Non Woven Bags & More</p>
       </section>
 
