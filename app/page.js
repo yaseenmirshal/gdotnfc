@@ -5,11 +5,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
   FaInstagram,
-  FaFacebook,
   FaWhatsapp,
   FaShareAlt,
   FaAddressCard,
-  FaGlobe, // Website icon
+  FaGlobe, 
 } from 'react-icons/fa';
 
 export default function GdotNfcCard() {
@@ -63,7 +62,7 @@ export default function GdotNfcCard() {
         ))}
       </section>
 
-      {/* Action Buttons */}
+      {/* Action ButtonsSSS */}
       <div className="flex flex-wrap justify-center gap-4 mt-6" data-aos="fade-up">
         {/* Share Button */}
         <button
@@ -84,10 +83,9 @@ export default function GdotNfcCard() {
           <FaShareAlt />
           Share
         </button>
-
         {/* Save Contact Button */}
         <a
-          href="/gdot-contact.vcf"
+          href="/G-DOT.vcf"
           download="G-DOT.vcf"
           className="flex items-center gap-2 px-5 py-2 rounded-lg bg-white text-green-800 border border-green-700 hover:bg-gray-100 transition"
         >
@@ -126,7 +124,7 @@ export default function GdotNfcCard() {
         >
           <p className="mb-1">
             Powered by{' '}
-            <span className="text-green-300 font-semibold">RanzomTech</span>
+            <span className="text-green-300 font-semibold">RanzomTech.</span>
           </p>
         </a>
       </footer>
