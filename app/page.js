@@ -48,7 +48,7 @@ export default function GdotNfcCard() {
       </section>
 
       {/* Social Media Icons */}
-      <section className="flex justify-center flex-wrap gap-4 text-xl mt-6" data-aos="fade-up">
+      <section className="flex justify-center flex-wrap gap-4 text-3xl mt-6" data-aos="fade-up">
         {socialLinks.map(({ icon: Icon, url, label }, index) => (
           <a
             key={index}
@@ -56,7 +56,7 @@ export default function GdotNfcCard() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
-            className="w-10 h-10 bg-green-800 hover:bg-green-700 transition rounded-full flex items-center justify-center"
+            className="w-12 h-12 bg-green-800 hover:bg-green-700 transition rounded-full flex items-center justify-center"
           >
             <Icon className="text-white" />
           </a>
@@ -88,7 +88,7 @@ export default function GdotNfcCard() {
         {/* Save Contact Button */}
         <a
           href="/gdot-contact.vcf"
-          download="GDOT-Contact.vcf"
+          download="G-DOT.vcf"
           className="flex items-center gap-2 px-5 py-2 rounded-lg bg-white text-green-800 border border-green-700 hover:bg-gray-100 transition"
         >
           <FaAddressCard />
