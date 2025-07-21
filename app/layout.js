@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "GDOT NFC",
-  description: "Business NFC Card",
+  description: "Business NFC Card by RanzomTech",
 };
 
 export default function RootLayout({ children }) {
