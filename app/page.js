@@ -118,7 +118,7 @@ export default function GdotNfcCard() {
       {/* Footer */}
       <footer className="mt-12 text-center text-sm text-gray-500" data-aos="fade-up">
         <a
-          href="https://www.instagram.com/ranzomtech?igsh=OGV3MW4xZXdlaW5z"
+          href="https://www.instagram.com/the.brandlee/"
           target="_blank"
           rel="noopener noreferrer"
         >
