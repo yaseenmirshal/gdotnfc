@@ -8,7 +8,8 @@ import {
   FaWhatsapp,
   FaShareAlt,
   FaAddressCard,
-  FaGlobe, 
+  FaGlobe,
+  FaPhoneAlt,
 } from 'react-icons/fa';
 
 export default function GdotNfcCard() {
@@ -22,7 +23,6 @@ export default function GdotNfcCard() {
       url: 'https://www.instagram.com/gdot_international?igsh=MTRzbmhmc3p5aGprdQ==',
       label: 'Instagram',
     },
-  
     {
       icon: FaWhatsapp,
       url: 'https://wa.me/+919539509808',
@@ -35,12 +35,42 @@ export default function GdotNfcCard() {
     },
   ];
 
+  const teamMembers = [
+    {
+      name: 'ABBAS PP',
+      designation: 'Founder, Chairman  Mentor',
+      photo: '/abbas hd.png',
+      phone: '+91919846623254',
+      whatsapp: 'https://wa.me/+919846623254',
+    },
+    {
+      name: 'IRSHAD MAAZANK',
+      designation: 'CEO, Co-Founder & Head of Marketing',
+      photo: '/irshad.png',
+      phone: '+919946260777',
+      whatsapp: 'https://wa.me/919946260777',
+    },
+    {
+      name: 'MUHAMMED SIYAD',
+      designation: 'COO & Head of Procurement',
+      photo: '/siyad k.png',
+      phone: '+919847909808',
+      whatsapp: 'https://wa.me/919847909808',
+    },
+    {
+      name: 'MUHAMMED BADSHA',
+      designation: 'CCO, Co-Founder & Head of Sales',
+      photo: 'https://t3.ftcdn.net/jpg/09/64/89/20/360_F_964892089_vioRltmAxaoQEBLtYtChVBxIzDWwhA3T.jpg',
+      phone: '+919747038855',
+      whatsapp: 'https://wa.me/919747038855',
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#0b1f16] via-[#091a13] to-black text-white px-4 py-5 font-sans">
-      
       {/* Header */}
       <section className="flex flex-col items-center text-center" data-aos="fade-down">
-        <div className="w-80 h-80 -mt-10 -mb-15 flex items-center justify-center"> {/* Increased size */}
+        <div className="w-80 h-80 -mt-10 -mb-15 flex items-center justify-center">
           <img src="/G-DOT white hd.png" alt="GDOT Logo" className="w-full h-full object-contain" />
         </div>
         <p className="text-sm font-bold text-gray-300">Customized Non Woven Bags & More</p>
@@ -62,7 +92,7 @@ export default function GdotNfcCard() {
         ))}
       </section>
 
-      {/* Action ButtonsSSS */}
+      {/* Action Buttons */}
       <div className="flex flex-wrap justify-center gap-4 mt-6" data-aos="fade-up">
         {/* Share Button */}
         <button
@@ -83,6 +113,7 @@ export default function GdotNfcCard() {
           <FaShareAlt />
           Share
         </button>
+
         {/* Save Contact Button */}
         <a
           href="/G-DOT.vcf"
@@ -94,25 +125,41 @@ export default function GdotNfcCard() {
         </a>
       </div>
 
-      {/* Sub Services Section */}
+      {/* Our Team Section */}
       <section className="mt-12 text-center" data-aos="fade-up">
-        <h3 className="text-xl font-semibold text-green-300 mb-4">Our Sub Services</h3>
-        <ul className="grid gap-3 grid-cols-1 sm:grid-cols-2 max-w-md mx-auto text-sm">
-          {[
-            'Paper Straw',
-            'Tissue Paper',
-            'Paper Glass',
-            'Food Container',
-            'Paper Plate',
-          ].map((item, idx) => (
-            <li
+        <h2 className="text-2xl font-semibold text-green-300 mb-6">Our Team</h2>
+        <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+          {teamMembers.map((member, idx) => (
+            <div
               key={idx}
-              className="bg-green-950 hover:bg-green-900 text-white py-2 rounded-md transition"
+              className="bg-green-950 hover:bg-green-900 p-4 rounded-xl shadow-md transition flex flex-col items-center"
             >
-              {item}
-            </li>
+              <img
+                src={member.photo}
+                alt={member.name}
+                className="w-24 h-24 object-cover rounded-full border-2 border-green-300 mb-3"
+              />
+              <h4 className="font-semibold text-white">{member.name}</h4>
+              <p className="text-sm text-green-300">{member.designation}</p>
+              <div className="flex gap-3 mt-3">
+                <a
+                  href={`tel:${member.phone}`}
+                  className="w-10 h-10 bg-green-700 hover:bg-green-600 rounded-full flex items-center justify-center"
+                >
+                  <FaPhoneAlt className="text-white" />
+                </a>
+                <a
+                  href={member.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-green-700 hover:bg-green-600 rounded-full flex items-center justify-center"
+                >
+                  <FaWhatsapp className="text-white text-2xl" />
+                </a>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
 
       {/* Footer */}
