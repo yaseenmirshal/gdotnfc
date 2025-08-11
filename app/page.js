@@ -39,7 +39,7 @@ export default function GdotNfcCard() {
     {
       name: 'ABBAS PP',
       designation: 'Founder, Chairman  Mentor',
-      photo: '/abbas hd.png',
+      photo: '/abbas com.png',
       phone: '+91919846623254',
       whatsapp: 'https://wa.me/+919846623254',
     },
@@ -139,8 +139,8 @@ export default function GdotNfcCard() {
                 alt={member.name}
                 className="w-24 h-24 object-cover rounded-full border-2 border-green-300 mb-3"
               />
-              <h4 className="font-semibold text-white">{member.name}</h4>
-              <p className="text-sm text-green-300">{member.designation}</p>
+              <h4 className="font-semibold text-[11px] text-white">{member.name}</h4>
+              <p className="text-[11px] text-green-300">{member.designation}</p>
               <div className="flex gap-3 mt-3">
                 <a
                   href={`tel:${member.phone}`}
